@@ -1,0 +1,64 @@
+/*Estilo Index */
+
+header {
+   grid-column: 1 / 3;
+   grid-row: 1 / 2;
+}
+.banner {
+   background-image: url(../Img/banner.jpg);
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   height: 900px;
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+
+   /* Nueva propiedad */
+   max-height: 100vh;
+}
+.paginas {
+   grid-column: 1 / 3;
+   grid-row: 3 / 4;
+}
+
+footer {
+   grid-column: 1 / 3;
+   grid-row: 4 / 5;
+}
+/*Estilo menu */
+
+nav ul li a:hover {
+   text-decoration: none;
+   color: blue;
+}
+
+ul {
+   list-style-type: none;
+}
+
+@media (max-width: 576px) {
+   nav ul {
+       display: flex;
+       flex-direction: column;
+   }
+
+   nav ul li {
+       width: 100%;
+   }
+
+   nav ul li a {
+       padding: 10px;
+       text-align: center;
+   }
+}
+img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ /*visitaded */
+ nav ul li a: visited {
+   text-decoration: none;
+   color: black
+
+}
